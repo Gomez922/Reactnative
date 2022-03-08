@@ -68,10 +68,10 @@ class Reservation extends Component {
                 <View style={styles.formRow}>
                     <Text style={styles.formLabel}>Date</Text>
                     <Button
-                        onPress={() => this.setState({ showCalendar: !this.state.showCalander })}
+                        onPress={() => this.setState({ showCalendar: !this.state.showCalendar})}
                         title={this.state.date.toLocaleDateString('en-US')}
                         color='#5637DD'
-                        accessibilityLabel='Tap me to select a servation date'
+                        accessibilityLabel='Tap me to select a reservation date'
                     />
                 </View>
                 {this.state.showCalendar && (
@@ -90,7 +90,7 @@ class Reservation extends Component {
                         onPress={() => this.handleReservation()}
                         title='Search'
                         color='#5637DD'
-                        accessibilityLabel='Tap me to search for available'
+                        accessibilityLabel='Tap me to search for available campsites to reserve'
                     />
                 </View>
                 <Modal
